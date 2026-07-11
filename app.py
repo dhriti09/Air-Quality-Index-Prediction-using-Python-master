@@ -22,9 +22,8 @@ def predict_aqi(data: dict, filename: str) -> float:
 
 @app.route('/')
 @cross_origin()
-def index() -> str:
-    # Just verify if server is up
-    return "Hello World"
+def index():
+    return render_template('index.html')
 
 
 @app.route('/city')
