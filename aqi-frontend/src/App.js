@@ -110,6 +110,11 @@ export default class App extends React.Component {
             <input type='number' value={this.state.formData.Tm} id='Tm' onChange={this.handleInput} step="0.01" />
             <br /><br />
 
+            {
+  this.state.result && !this.state.loading &&
+  <div className="result-box">AQI Prediction is: {this.state.result}</div>
+}
+
             <label>Enter Average Relative Humidity (%)</label>
             <input type='number' value={this.state.formData.H} id='H' onChange={this.handleInput} step="0.01" />
             <br /><br />
