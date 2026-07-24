@@ -1,5 +1,0 @@
-node_modules/
-aqi-frontend/build/
-.env
-.venv/
-__pycache__/
